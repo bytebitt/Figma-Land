@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-[#181818] text-white">
+    <div class="wrapper">
+      <header class="flex items-center h-[107px]">
+        <div class="container mx-auto px-4 max-w-full">
+          <div class="flex justify-between items-center">
+            <img src="images/icons/Logo.png" alt="Logo-icon" />
+            <nav class="flex items-center">
+              <!-- mobile burger -->
+              <button>
+                <img
+                  src="/images/icons/menu-btn.png"
+                  alt="burger-menu-icon"
+                  class="md:hidden"
+                />
+              </button>
+
+              <!-- desktop -->
+              <ul class="hidden md:flex gap-5 md:text-xl lg:text-2xl">
+                <li>Home</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+            <div class="hidden md:flex items-center justify-center">
+              <button
+                class="w-[139px] h-[52px] border border-white xl:text-2xl lg:w-[200px] xl:h-[60px]"
+              >
+                Log in
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
