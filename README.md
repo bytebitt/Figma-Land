@@ -6,3 +6,4 @@
 
 - **HTML5**
 - **Tailwind CSS**
+- **Javascript**
