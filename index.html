@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body class="bg-[#181818] text-white">
@@ -15,18 +22,16 @@
       <header class="flex items-center h-[107px]">
         <div class="container mx-auto px-4 max-w-full">
           <div class="flex justify-between items-center">
-            <img src="images/icons/Logo.png" alt="Logo-icon" />
+            <img src="./images/icons/Logo.png" alt="Logo-icon" />
             <nav class="flex items-center">
-              <!-- mobile burger -->
-              <button>
+              <button id="burgerBtn">
                 <img
-                  src="/images/icons/menu-btn.png"
+                  src="./images/icons/menu-btn.png"
                   alt="burger-menu-icon"
                   class="md:hidden"
                 />
               </button>
 
-              <!-- desktop -->
               <ul class="hidden md:flex gap-5 md:text-xl lg:text-2xl">
                 <li>Home</li>
                 <li>Products</li>
@@ -36,14 +41,39 @@
             </nav>
             <div class="hidden md:flex items-center justify-center">
               <button
-                class="w-[139px] h-[52px] border border-white xl:text-2xl lg:w-[200px] xl:h-[60px]"
+                class="w-[139px] h-[52px] lg:w-[200px] xl:h-[60px] border border-white text-lg xl:text-2xl"
               >
                 Log in
               </button>
             </div>
           </div>
+          <div
+            id="mobileMenu"
+            class="fixed top-0 left-[-100%] w-3/4 sm:w-1/2 h-full bg-[#3a3a3a] px-8 pt-24 pb-8 transition-all duration-300"
+          >
+            <button
+              id="exit"
+              class="absolute top-5 right-5 text-white text-2xl cursor-pointer"
+              aria-label="Close menu"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <ul class="flex flex-col gap-6 text-xl">
+              <li>Home</li>
+              <li>Products</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li
+                class="w-[139px] h-[52px] border border-white flex items-center justify-center"
+              >
+                Log in
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
