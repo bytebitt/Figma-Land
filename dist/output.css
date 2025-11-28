@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -211,11 +212,32 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
+  .mt-52 {
+    margin-top: calc(var(--spacing) * 52);
+  }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
   .hidden {
     display: none;
+  }
+  .inline {
+    display: inline;
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
   }
   .h-\[52px\] {
     height: 52px;
@@ -226,11 +248,35 @@
   .h-full {
     height: 100%;
   }
+  .max-h-\[120px\] {
+    max-height: 120px;
+  }
+  .max-h-\[186px\] {
+    max-height: 186px;
+  }
   .w-3\/4 {
     width: calc(3/4 * 100%);
   }
+  .w-44 {
+    width: calc(var(--spacing) * 44);
+  }
   .w-\[139px\] {
     width: 139px;
+  }
+  .w-\[178px\] {
+    width: 178px;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-\[294px\] {
+    max-width: 294px;
+  }
+  .max-w-\[350px\] {
+    max-width: 350px;
+  }
+  .max-w-\[382px\] {
+    max-width: 382px;
   }
   .max-w-full {
     max-width: 100%;
@@ -257,6 +303,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -267,11 +316,17 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-red-500 {
+    border-color: var(--color-red-500);
+  }
   .border-white {
     border-color: var(--color-white);
   }
   .bg-\[\#3a3a3a\] {
     background-color: #3a3a3a;
+  }
+  .bg-\[\#4452FE\] {
+    background-color: #4452FE;
   }
   .bg-\[\#181818\] {
     background-color: #181818;
@@ -288,6 +343,9 @@
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
   }
+  .text-center {
+    text-align: center;
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -299,6 +357,43 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[18px\] {
+    font-size: 18px;
+  }
+  .text-\[42px\] {
+    font-size: 42px;
+  }
+  .text-\[45px\] {
+    font-size: 45px;
+  }
+  .text-\[48px\] {
+    font-size: 48px;
+  }
+  .text-\[50px\] {
+    font-size: 50px;
+  }
+  .text-\[52px\] {
+    font-size: 52px;
+  }
+  .text-\[59px\] {
+    font-size: 59px;
+  }
+  .leading-6 {
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
+  }
+  .leading-8 {
+    --tw-leading: calc(var(--spacing) * 8);
+    line-height: calc(var(--spacing) * 8);
+  }
+  .leading-16 {
+    --tw-leading: calc(var(--spacing) * 16);
+    line-height: calc(var(--spacing) * 16);
+  }
+  .leading-\[30px\] {
+    --tw-leading: 30px;
+    line-height: 30px;
   }
   .text-white {
     color: var(--color-white);
@@ -349,6 +444,26 @@
       width: calc(1/2 * 100%);
     }
   }
+  .sm\:max-w-\[500px\] {
+    @media (width >= 40rem) {
+      max-width: 500px;
+    }
+  }
+  .sm\:max-w-\[609px\] {
+    @media (width >= 40rem) {
+      max-width: 609px;
+    }
+  }
+  .sm\:max-w-\[709px\] {
+    @media (width >= 40rem) {
+      max-width: 709px;
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -359,10 +474,68 @@
       display: none;
     }
   }
+  .md\:inline {
+    @media (width >= 48rem) {
+      display: inline;
+    }
+  }
+  .md\:max-w-\[709px\] {
+    @media (width >= 48rem) {
+      max-width: 709px;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:text-2xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
   .md\:text-xl {
     @media (width >= 48rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .md\:text-\[60px\] {
+    @media (width >= 48rem) {
+      font-size: 60px;
+    }
+  }
+  .md\:text-\[70px\] {
+    @media (width >= 48rem) {
+      font-size: 70px;
+    }
+  }
+  .md\:hover\:bg-\[\#0211ad\] {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: #0211ad;
+        }
+      }
+    }
+  }
+  .md\:hover\:bg-white {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-white);
+        }
+      }
+    }
+  }
+  .md\:hover\:text-black {
+    @media (width >= 48rem) {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-black);
+        }
+      }
     }
   }
   .lg\:flex {
@@ -373,6 +546,11 @@
   .lg\:w-\[200px\] {
     @media (width >= 64rem) {
       width: 200px;
+    }
+  }
+  .lg\:max-w-\[709px\] {
+    @media (width >= 64rem) {
+      max-width: 709px;
     }
   }
   .lg\:text-2xl {
@@ -442,6 +620,10 @@ body {
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -462,6 +644,7 @@ body {
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-duration: initial;
       --tw-font-weight: initial;
     }

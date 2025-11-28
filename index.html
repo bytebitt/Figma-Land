@@ -18,63 +18,106 @@
     <title>Document</title>
   </head>
   <body class="bg-[#181818] text-white">
-    <div class="wrapper">
-      <header class="flex items-center h-[107px]">
-        <div class="container mx-auto px-4 max-w-full">
-          <div class="flex justify-between items-center">
-            <img src="./images/icons/Logo.png" alt="Logo-icon" />
-            <nav class="flex items-center">
-              <button id="burgerBtn">
-                <img
-                  src="./images/icons/menu-btn.png"
-                  alt="burger-menu-icon"
-                  class="md:hidden"
-                />
-              </button>
-
-              <!-- Desktop Header -->
-              <ul class="hidden md:flex gap-5 md:text-xl lg:text-2xl">
-                <li class="hover:font-semibold cursor-pointer">Home</li>
-                <li class="hover:font-semibold cursor-pointer">Products</li>
-                <li class="hover:font-semibold cursor-pointer">About</li>
-                <li class="hover:font-semibold cursor-pointer">Contact</li>
-              </ul>
-            </nav>
-            <div class="hidden md:flex items-center justify-center">
-              <button
-                class="w-[139px] h-[52px] lg:w-[200px] xl:h-[60px] border border-white text-lg xl:text-2xl hover:bg-white hover:text-black transition-colors duration-300"
-              >
-                Log in
-              </button>
-            </div>
-          </div>
-          <div
-            id="mobileMenu"
-            class="fixed top-0 left-[-100%] w-3/4 sm:w-1/2 h-full bg-[#3a3a3a] px-8 pt-24 pb-8 transition-all duration-300"
-          >
-            <button
-              id="exit"
-              class="absolute top-5 right-5 text-white text-2xl cursor-pointer"
-              aria-label="Close menu"
-            >
-              <i class="fa-solid fa-xmark"></i>
+    <header class="flex items-center h-[107px]">
+      <div class="container mx-auto px-4 max-w-full">
+        <div class="flex justify-between items-center">
+          <img src="./images/icons/Logo.png" alt="Logo-icon" />
+          <nav class="flex items-center">
+            <button id="burgerBtn">
+              <img
+                src="./images/icons/menu-btn.png"
+                alt="burger-menu-icon"
+                class="md:hidden"
+              />
             </button>
 
-            <ul class="flex flex-col gap-6 text-xl">
-              <li>Home</li>
-              <li>Products</li>
-              <li>About</li>
-              <li>Contact</li>
-              <li
-                class="w-[139px] h-[52px] border border-white flex items-center justify-center"
-              >
-                Log in
-              </li>
+            <!-- Desktop Header -->
+            <ul class="hidden md:flex gap-5 md:text-xl lg:text-2xl">
+              <li class="hover:font-semibold cursor-pointer">Home</li>
+              <li class="hover:font-semibold cursor-pointer">Products</li>
+              <li class="hover:font-semibold cursor-pointer">About</li>
+              <li class="hover:font-semibold cursor-pointer">Contact</li>
             </ul>
+          </nav>
+          <div class="hidden md:flex items-center justify-center">
+            <button
+              class="w-[139px] h-[52px] lg:w-[200px] xl:h-[60px] border border-white text-lg xl:text-2xl hover:bg-white hover:text-black transition-colors duration-300"
+            >
+              Log in
+            </button>
           </div>
         </div>
-      </header>
-    </div>
+        <div
+          id="mobileMenu"
+          class="fixed top-0 left-[-100%] w-3/4 sm:w-1/2 h-full bg-[#3a3a3a] px-8 pt-24 pb-8 transition-all duration-300"
+        >
+          <button
+            id="exit"
+            class="absolute top-5 right-5 text-white text-2xl cursor-pointer"
+            aria-label="Close menu"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <ul class="flex flex-col gap-6 text-xl">
+            <li>Home</li>
+            <li>Products</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li
+              class="w-[139px] h-[52px] border border-white flex items-center justify-center"
+            >
+              Log in
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="mt-15">
+        <div class="flex flex-col gap-5 text-center">
+          <h1
+            class="mx-auto text-[48px] leading-16 max-w-[294px] max-h-[186px] sm:max-w-[609px] md:text-[60px]"
+          >
+            Work at the Speed of thought
+          </h1>
+          <p
+            class="mx-auto leading-[30px] max-w-[350px] max-h-[120px] sm:max-w-[500px] md:text-xl"
+          >
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-5 justify-center items-center mt-15 md:flex-row"
+        >
+          <button
+            class="w-44 h-16 flex justify-center items-center bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300"
+          >
+            Try For Free
+          </button>
+          <button
+            class="w-44 h-16 flex justify-center items-center border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <div class="w-full mt-10">
+          <img
+            src="./images/screens-mobile-grad.png"
+            alt="screens-image-mobile"
+            class="md:hidden mx-auto w-full"
+          />
+          <img
+            src="./images/screens-desktop-grad.png"
+            alt="screens-image-dekstop"
+            class="hidden md:block mx-auto w-full"
+          />
+        </div>
+      </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
