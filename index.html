@@ -19,7 +19,7 @@
   </head>
   <body class="bg-[#181818] text-white">
     <header class="flex items-center h-[107px]">
-      <div class="container mx-auto px-4 max-w-full">
+      <div class="container mx-auto px-4 max-w-full md:max-w-[1200px]">
         <div class="flex justify-between items-center">
           <img src="./images/icons/Logo.png" alt="Logo-icon" />
           <nav class="flex items-center">
@@ -33,10 +33,18 @@
 
             <!-- Desktop Header -->
             <ul class="hidden md:flex gap-5 md:text-xl lg:text-2xl">
-              <li class="hover:font-semibold cursor-pointer">Home</li>
-              <li class="hover:font-semibold cursor-pointer">Products</li>
-              <li class="hover:font-semibold cursor-pointer">About</li>
-              <li class="hover:font-semibold cursor-pointer">Contact</li>
+              <li class="hover:font-semibold cursor-pointer">
+                <a href="#!">Home</a>
+              </li>
+              <li class="hover:font-semibold cursor-pointer">
+                <a href="#!">Products</a>
+              </li>
+              <li class="hover:font-semibold cursor-pointer">
+                <a href="#!">About</a>
+              </li>
+              <li class="hover:font-semibold cursor-pointer">
+                <a href="#!">Contact</a>
+              </li>
             </ul>
           </nav>
           <div class="hidden md:flex items-center justify-center">
@@ -60,10 +68,10 @@
           </button>
 
           <ul class="flex flex-col gap-6 text-xl">
-            <li>Home</li>
-            <li>Products</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">Products</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Contact</a></li>
             <li
               class="w-[139px] h-[52px] border border-white flex items-center justify-center"
             >
@@ -77,12 +85,12 @@
       <section class="mt-15">
         <div class="flex flex-col gap-5 text-center">
           <h1
-            class="mx-auto text-[48px] leading-16 max-w-[294px] max-h-[186px] sm:max-w-[609px] md:text-[60px]"
+            class="mx-auto text-[48px] leading-16 max-w-[294px] sm:max-w-[609px] md:text-[60px]"
           >
             Work at the Speed of thought
           </h1>
           <p
-            class="mx-auto leading-[30px] max-w-[350px] max-h-[120px] sm:max-w-[500px] md:text-xl"
+            class="px-3 mx-auto leading-[30px] max-w-[350px] sm:max-w-[500px] md:text-xl"
           >
             Most calendars are designed for teams. Slate is designed for
             freelancers who want a simple way to plan their schedule.
@@ -115,6 +123,88 @@
             alt="screens-image-dekstop"
             class="hidden md:block mx-auto w-full"
           />
+        </div>
+      </section>
+      <section class="mt-20">
+        <div class="text-center flex flex-col gap-5">
+          <h2 class="text-5xl leading-14 md:text-6xl">FEATURES</h2>
+          <p class="px-3 max-w-[411px] leading-7 mx-auto md:max-w-[600px]">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+          </p>
+        </div>
+
+        <div class="md:flex justify-center items-center">
+          <div class="relative flex justify-center mt-12">
+            <img
+              src="./images/chatbot-mobile.png"
+              alt="chatbot-mobile"
+              class="md:hidden w-[85%] mx-auto"
+            />
+
+            <img
+              src="./images/linechart-mobile.png"
+              alt="linechart-mobile"
+              class="md:hidden absolute left-1/2 -translate-x-1/2 bottom-[-25%] w-[65%]"
+            />
+
+            <img
+              src="./images/chatbot-desktop.png"
+              alt="chatbot-desktop"
+              class="hidden md:block w-[80%] max-w-[900px] mx-auto"
+            />
+
+            <img
+              src="./images/linechart-desktop.png"
+              alt="linechart-desktop"
+              class="hidden md:block absolute w-[40%] right-[10%] bottom-[-5%]"
+            />
+          </div>
+
+          <div class="mt-30 flex flex-col gap-15">
+            <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
+              <div class="flex gap-4 items-center">
+                <img
+                  src="./images/icons/cultery_icon1.png"
+                  alt="column_icon1"
+                  class=""
+                />
+                <h3 class="text-xl">A single source of truth</h3>
+              </div>
+              <p>
+                When you add work to your Slate calendar we automatically
+                calculate useful insights
+              </p>
+            </div>
+            <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
+              <div class="flex gap-4 items-center">
+                <img
+                  src="./images/icons/humanoid_icon2.png"
+                  alt="column_icon2"
+                  class=""
+                />
+                <h3 class="text-xl">Intuitive interface</h3>
+              </div>
+              <p>
+                When you add work to your Slate calendar we automatically
+                calculate useful insights
+              </p>
+            </div>
+            <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
+              <div class="flex gap-4 items-center">
+                <img
+                  src="./images/icons/infinity_icon3.png"
+                  alt="column_icon3"
+                  class=""
+                />
+                <h3 class="text-xl">Or with rules</h3>
+              </div>
+              <p>
+                When you add work to your Slate calendar we automatically
+                calculate useful insights
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
