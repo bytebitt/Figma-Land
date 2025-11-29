@@ -18,8 +18,8 @@
     <title>Document</title>
   </head>
   <body class="bg-[#181818] text-white">
-    <header class="flex items-center h-[107px]">
-      <div class="container mx-auto px-4 max-w-full md:max-w-[1200px]">
+    <header class="h-[107px] flex items-center">
+      <div class="container mx-auto max-w-full md:max-w-[1200px] px-4">
         <div class="flex justify-between items-center">
           <img src="./images/icons/Logo.png" alt="Logo-icon" />
           <nav class="flex items-center">
@@ -30,26 +30,24 @@
                 class="md:hidden"
               />
             </button>
-
-            <!-- Desktop Header -->
             <ul class="hidden md:flex gap-5 md:text-xl lg:text-2xl">
-              <li class="hover:font-semibold cursor-pointer">
+              <li class="cursor-pointer hover:font-semibold">
                 <a href="#!">Home</a>
               </li>
-              <li class="hover:font-semibold cursor-pointer">
+              <li class="cursor-pointer hover:font-semibold">
                 <a href="#!">Products</a>
               </li>
-              <li class="hover:font-semibold cursor-pointer">
+              <li class="cursor-pointer hover:font-semibold">
                 <a href="#!">About</a>
               </li>
-              <li class="hover:font-semibold cursor-pointer">
+              <li class="cursor-pointer hover:font-semibold">
                 <a href="#!">Contact</a>
               </li>
             </ul>
           </nav>
           <div class="hidden md:flex items-center justify-center">
             <button
-              class="w-[139px] h-[52px] lg:w-[200px] xl:h-[60px] border border-white text-lg xl:text-2xl hover:bg-white hover:text-black transition-colors duration-300"
+              class="w-[139px] h-[52px] lg:w-[200px] xl:h-[60px] text-lg xl:text-2xl border border-white hover:bg-white hover:text-black transition-colors duration-300"
             >
               Log in
             </button>
@@ -61,19 +59,18 @@
         >
           <button
             id="exit"
-            class="absolute top-5 right-5 text-white text-2xl cursor-pointer"
+            class="absolute top-5 right-5 text-2xl text-white cursor-pointer"
             aria-label="Close menu"
           >
             <i class="fa-solid fa-xmark"></i>
           </button>
-
           <ul class="flex flex-col gap-6 text-xl">
             <li><a href="#!">Home</a></li>
             <li><a href="#!">Products</a></li>
             <li><a href="#!">About</a></li>
             <li><a href="#!">Contact</a></li>
             <li
-              class="w-[139px] h-[52px] border border-white flex items-center justify-center"
+              class="w-[139px] h-[52px] flex items-center justify-center border border-white"
             >
               Log in
             </li>
@@ -85,89 +82,83 @@
       <section class="mt-15">
         <div class="flex flex-col gap-5 text-center">
           <h1
-            class="mx-auto text-[48px] leading-16 max-w-[294px] sm:max-w-[609px] md:text-[60px]"
+            class="mx-auto max-w-[294px] sm:max-w-[609px] text-[48px] md:text-[60px] leading-16"
           >
             Work at the Speed of thought
           </h1>
           <p
-            class="px-3 mx-auto leading-[30px] max-w-[350px] sm:max-w-[500px] md:text-xl"
+            class="mx-auto max-w-[350px] sm:max-w-[500px] px-3 leading-[30px] md:text-xl"
           >
             Most calendars are designed for teams. Slate is designed for
             freelancers who want a simple way to plan their schedule.
           </p>
         </div>
-
         <div
-          class="flex flex-col gap-5 justify-center items-center mt-15 md:flex-row"
+          class="mt-15 flex flex-col gap-5 justify-center items-center md:flex-row"
         >
           <button
-            class="w-44 h-16 flex justify-center items-center bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300"
+            class="flex items-center justify-center w-44 h-16 bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300"
           >
             Try For Free
           </button>
           <button
-            class="w-44 h-16 flex justify-center items-center border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300"
+            class="flex items-center justify-center w-44 h-16 border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300"
           >
             Learn More
           </button>
         </div>
-
-        <div class="w-full mt-10">
+        <div class="mt-10 w-full">
           <img
             src="./images/screens-mobile-grad.png"
             alt="screens-image-mobile"
-            class="md:hidden mx-auto w-full"
+            class="mx-auto w-full md:hidden"
           />
           <img
             src="./images/screens-desktop-grad.png"
-            alt="screens-image-dekstop"
-            class="hidden md:block mx-auto w-full"
+            alt="screens-image-desktop"
+            class="mx-auto w-full hidden md:block"
           />
         </div>
       </section>
       <section class="mt-20">
-        <div class="text-center flex flex-col gap-5">
+        <div class="flex flex-col gap-5 text-center">
           <h2 class="text-5xl leading-14 md:text-6xl">FEATURES</h2>
-          <p class="px-3 max-w-[411px] leading-7 mx-auto md:max-w-[600px]">
+          <p
+            class="mx-auto max-w-[411px] px-3 leading-7 md:max-w-[600px] md:text-xl"
+          >
             Most calendars are designed for teams. Slate is designed for
             freelancers who want a simple way to plan their schedule.
           </p>
         </div>
-
         <div class="md:flex justify-center items-center">
           <div class="relative flex justify-center mt-12">
             <img
               src="./images/chatbot-mobile.png"
               alt="chatbot-mobile"
-              class="md:hidden w-[85%] mx-auto"
+              class="mx-auto w-[85%] md:hidden"
             />
-
             <img
               src="./images/linechart-mobile.png"
               alt="linechart-mobile"
-              class="md:hidden absolute left-1/2 -translate-x-1/2 bottom-[-25%] w-[65%]"
+              class="absolute left-1/2 -translate-x-1/2 bottom-[-25%] w-[65%] md:hidden"
             />
-
             <img
               src="./images/chatbot-desktop.png"
               alt="chatbot-desktop"
-              class="hidden md:block w-[80%] max-w-[900px] mx-auto"
+              class="mx-auto w-[80%] max-w-[900px] hidden md:block"
             />
-
             <img
               src="./images/linechart-desktop.png"
               alt="linechart-desktop"
-              class="hidden md:block absolute w-[40%] right-[10%] bottom-[-5%]"
+              class="absolute w-[40%] right-[10%] bottom-[-5%] hidden md:block"
             />
           </div>
-
           <div class="mt-30 flex flex-col gap-15">
             <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
-              <div class="flex gap-4 items-center">
+              <div class="flex items-center gap-4">
                 <img
                   src="./images/icons/cultery_icon1.png"
                   alt="column_icon1"
-                  class=""
                 />
                 <h3 class="text-xl">A single source of truth</h3>
               </div>
@@ -177,11 +168,10 @@
               </p>
             </div>
             <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
-              <div class="flex gap-4 items-center">
+              <div class="flex items-center gap-4">
                 <img
                   src="./images/icons/humanoid_icon2.png"
                   alt="column_icon2"
-                  class=""
                 />
                 <h3 class="text-xl">Intuitive interface</h3>
               </div>
@@ -191,11 +181,10 @@
               </p>
             </div>
             <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
-              <div class="flex gap-4 items-center">
+              <div class="flex items-center gap-4">
                 <img
                   src="./images/icons/infinity_icon3.png"
                   alt="column_icon3"
-                  class=""
                 />
                 <h3 class="text-xl">Or with rules</h3>
               </div>
@@ -207,7 +196,170 @@
           </div>
         </div>
       </section>
+      <section class="mt-25">
+        <div
+          class="flex flex-col items-center justify-center gap-5 text-center"
+        >
+          <h2 class="text-5xl leading-14 md:text-6xl">Contents</h2>
+          <p class="max-w-2xs md:max-w-lg leading-7 md:text-xl">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+        </div>
+        <div
+          class="mt-10 flex flex-col items-center justify-center gap-7 md:flex-row"
+        >
+          <div
+            class="flex flex-col justify-between items-center text-center w-2xs h-[573px] bg-white rounded-xl p-10 md:w-xs lg:w-[476px]"
+          >
+            <div class="flex flex-col gap-4">
+              <h3 class="text-black text-xl font-medium">Work</h3>
+              <p class="text-[#5C5C5C] max-w-[80%] mx-auto">
+                Ever wondered if you're too reliant on a client for work? Slate
+                helps you identify.
+              </p>
+            </div>
+            <button
+              class="flex justify-center items-center w-full max-w-[150px] h-[52px] bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300 font-medium rounded-lg"
+            >
+              Sign Up
+            </button>
+            <img
+              src="./images/Macbook Pro.png"
+              alt="macbook-image"
+              class="md:hidden"
+            />
+            <img
+              src="./images/Macbook Pro -desktop.png"
+              alt="macbb0ok-image"
+              class="hidden md:block"
+            />
+          </div>
+          <div
+            class="flex flex-col justify-between items-center text-center w-2xs h-[573px] bg-white rounded-xl p-10 md:w-xs lg:w-[476px]"
+          >
+            <div class="flex flex-col gap-4">
+              <h3 class="text-black text-xl font-medium">
+                Design with real data
+              </h3>
+              <p class="text-[#5C5C5C] max-w-[80%] mx-auto">
+                Ever wondered if you're too reliant on a client for work? Slate
+                helps you identify.
+              </p>
+            </div>
+            <button
+              class="flex justify-center items-center w-full max-w-[150px] h-[52px] bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300 font-medium rounded-lg"
+            >
+              Try For Free
+            </button>
+            <img
+              src="./images/Boards Notifications.png"
+              alt="boards-image"
+              class="md:hidden"
+            />
+            <!-- lbit borken image -->
+            <img
+              src="./images/Boards Notifications-desktop.png"
+              alt="boards-image"
+              class="hidden md:block"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="mt-20">
+        <div class="flex flex-col text-center">
+          <h2 class="text-5xl leading-14 md:text-6xl">Gallery</h2>
+          <p class="max-w-2xs md:max-w-lg mx-auto leading-7 md:text-xl">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+        </div>
+        <div class="flex flex-col items-center mt-5 gap-5">
+          <!-- mobile col -->
+          <div class="flex flex-col gap-5">
+            <img
+              src="./images/galery_1.png"
+              alt="galery_1"
+              class="rounded-2xl lg:hidden"
+            />
+            <img
+              src="./images/galery_2.png"
+              alt="galery_2"
+              class="rounded-2xl lg:hidden"
+            />
+            <img
+              src="./images/galery_3.png"
+              alt="galery_3"
+              class="rounded-2xl lg:hidden"
+            />
+            <img
+              src="./images/galery_4.png"
+              alt="galery_4"
+              class="rounded-2xl lg:hidden"
+            />
+          </div>
+          <!-- desktop row 1 -->
+          <div class="hidden lg:flex justify-center gap-5">
+            <img src="./images/galery_1pc.png" alt="" class="rounded-2xl" />
+            <img src="./images/galery_2pc.png" alt="" class="rounded-2xl" />
+            <img src="./images/galery_3pc.png" alt="" class="rounded-2xl" />
+            <img src="./images/galery_4pc.png" alt="" class="rounded-2xl" />
+          </div>
+          <!-- desktop row 2 -->
+          <div class="hidden lg:flex justify-center gap-5">
+            <img src="./images/galery_5pc.png" alt="" class="rounded-2xl" />
+            <img src="./images/galery_6pc.png" alt="" class="rounded-2xl" />
+            <img src="./images/galery_7pc.png" alt="" class="rounded-2xl" />
+          </div>
+        </div>
+        <button
+          class="flex items-center justify-center w-44 h-16 border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300 mx-auto mt-10"
+        >
+          See more
+        </button>
+      </section>
+      <section class="mt-50">
+        <div class="text-center flex flex-col gap-5">
+          <h2 class="text-5xl leading-14 md:text-6xl">Partners</h2>
+          <p class="max-w-2xs md:max-w-lg mx-auto leading-7 md:text-xl">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center gap-5 mt-15 md:flex-row"
+        >
+          <div class="flex justify-center gap-5">
+            <img
+              src="./images/logos_apple-app-store.png"
+              alt=""
+              class="h-14 sm:h-16"
+            />
+            <img src="./images/logos_apiary.png" alt="" class="h-14 sm:h-16" />
+            <img
+              src="./images/logos_android-icon.png"
+              alt=""
+              class="h-14 sm:h-16"
+            />
+          </div>
+          <div class="flex justify-center gap-4">
+            <img
+              src="./images/logos_basecamp.png"
+              alt=""
+              class="h-14 sm:h-16"
+            />
+            <img src="./images/logos_airbnb.png" alt="" class="h-14 sm:h-16" />
+            <img src="./images/logos_ibm.png" alt="" class="h-14 sm:h-16" />
+          </div>
+        </div>
+        <button
+          class="flex items-center justify-center w-44 h-16 border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300 mx-auto mt-10"
+        >
+          All Partners
+        </button>
+      </section>
     </main>
+
     <script src="./script.js"></script>
   </body>
 </html>
