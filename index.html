@@ -1,365 +1,235 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./dist/output.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Document</title>
-  </head>
-  <body class="bg-[#181818] text-white">
-    <header class="h-[107px] flex items-center">
-      <div class="container mx-auto max-w-full md:max-w-[1200px] px-4">
-        <div class="flex justify-between items-center">
-          <img src="./images/icons/Logo.png" alt="Logo-icon" />
-          <nav class="flex items-center">
-            <button id="burgerBtn">
-              <img
-                src="./images/icons/menu-btn.png"
-                alt="burger-menu-icon"
-                class="md:hidden"
-              />
-            </button>
-            <ul class="hidden md:flex gap-5 md:text-xl lg:text-2xl">
-              <li class="cursor-pointer hover:font-semibold">
-                <a href="#!">Home</a>
-              </li>
-              <li class="cursor-pointer hover:font-semibold">
-                <a href="#!">Products</a>
-              </li>
-              <li class="cursor-pointer hover:font-semibold">
-                <a href="#!">About</a>
-              </li>
-              <li class="cursor-pointer hover:font-semibold">
-                <a href="#!">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="hidden md:flex items-center justify-center">
-            <button
-              class="w-[139px] h-[52px] lg:w-[200px] xl:h-[60px] text-lg xl:text-2xl border border-white hover:bg-white hover:text-black transition-colors duration-300"
-            >
-              Log in
-            </button>
-          </div>
-        </div>
-        <div
-          id="mobileMenu"
-          class="fixed top-0 left-[-100%] w-3/4 sm:w-1/2 h-full bg-[#3a3a3a] px-8 pt-24 pb-8 transition-all duration-300"
-        >
-          <button
-            id="exit"
-            class="absolute top-5 right-5 text-2xl text-white cursor-pointer"
-            aria-label="Close menu"
-          >
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-          <ul class="flex flex-col gap-6 text-xl">
-            <li><a href="#!">Home</a></li>
-            <li><a href="#!">Products</a></li>
-            <li><a href="#!">About</a></li>
-            <li><a href="#!">Contact</a></li>
-            <li
-              class="w-[139px] h-[52px] flex items-center justify-center border border-white"
-            >
-              Log in
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="mt-15">
-        <div class="flex flex-col gap-5 text-center">
-          <h1
-            class="mx-auto max-w-[294px] sm:max-w-[609px] text-[48px] md:text-[60px] leading-16"
-          >
-            Work at the Speed of thought
-          </h1>
-          <p
-            class="mx-auto max-w-[350px] sm:max-w-[500px] px-3 leading-[30px] md:text-xl"
-          >
-            Most calendars are designed for teams. Slate is designed for
-            freelancers who want a simple way to plan their schedule.
-          </p>
-        </div>
-        <div
-          class="mt-15 flex flex-col gap-5 justify-center items-center md:flex-row"
-        >
-          <button
-            class="flex items-center justify-center w-44 h-16 bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300"
-          >
-            Try For Free
-          </button>
-          <button
-            class="flex items-center justify-center w-44 h-16 border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300"
-          >
-            Learn More
-          </button>
-        </div>
-        <div class="mt-10 w-full">
-          <img
-            src="./images/screens-mobile-grad.png"
-            alt="screens-image-mobile"
-            class="mx-auto w-full md:hidden"
-          />
-          <img
-            src="./images/screens-desktop-grad.png"
-            alt="screens-image-desktop"
-            class="mx-auto w-full hidden md:block"
-          />
-        </div>
-      </section>
-      <section class="mt-20">
-        <div class="flex flex-col gap-5 text-center">
-          <h2 class="text-5xl leading-14 md:text-6xl">FEATURES</h2>
-          <p
-            class="mx-auto max-w-[411px] px-3 leading-7 md:max-w-[600px] md:text-xl"
-          >
-            Most calendars are designed for teams. Slate is designed for
-            freelancers who want a simple way to plan their schedule.
-          </p>
-        </div>
-        <div class="md:flex justify-center items-center">
-          <div class="relative flex justify-center mt-12">
-            <img
-              src="./images/chatbot-mobile.png"
-              alt="chatbot-mobile"
-              class="mx-auto w-[85%] md:hidden"
-            />
-            <img
-              src="./images/linechart-mobile.png"
-              alt="linechart-mobile"
-              class="absolute left-1/2 -translate-x-1/2 bottom-[-25%] w-[65%] md:hidden"
-            />
-            <img
-              src="./images/chatbot-desktop.png"
-              alt="chatbot-desktop"
-              class="mx-auto w-[80%] max-w-[900px] hidden md:block"
-            />
-            <img
-              src="./images/linechart-desktop.png"
-              alt="linechart-desktop"
-              class="absolute w-[40%] right-[10%] bottom-[-5%] hidden md:block"
-            />
-          </div>
-          <div class="mt-30 flex flex-col gap-15">
-            <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
-              <div class="flex items-center gap-4">
-                <img
-                  src="./images/icons/cultery_icon1.png"
-                  alt="column_icon1"
-                />
-                <h3 class="text-xl">A single source of truth</h3>
-              </div>
-              <p>
-                When you add work to your Slate calendar we automatically
-                calculate useful insights
-              </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="./dist/output.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Figma-Land</title>
+    </head>
+    <body class="bg-[#181818] text-white">
+        <header class="h-[107px] flex items-center">
+            <div class="container mx-auto md:max-w-[1200px] px-4">
+                <div class="flex justify-between items-center">
+                    <img src="./images/icons/Logo.png" alt="Logo-icon" />
+                    <nav class="flex items-center">
+                        <button id="burgerBtn">
+                            <img src="./images/icons/menu-btn.png" alt="burger-menu-icon" class="md:hidden" />
+                        </button>
+                        <ul class="hidden md:flex gap-5 md:text-xl lg:text-2xl">
+                            <li class="cursor-pointer hover:font-semibold">
+                                <a href="#!">Home</a>
+                            </li>
+                            <li class="cursor-pointer hover:font-semibold">
+                                <a href="#!">Products</a>
+                            </li>
+                            <li class="cursor-pointer hover:font-semibold">
+                                <a href="#!">About</a>
+                            </li>
+                            <li class="cursor-pointer hover:font-semibold">
+                                <a href="#!">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hidden md:flex items-center justify-center">
+                        <button class="w-[139px] h-[52px] lg:w-[200px] xl:h-[60px] text-lg xl:text-2xl border border-white hover:bg-white hover:text-black transition-colors duration-300">Log in</button>
+                    </div>
+                </div>
+                <div id="mobileMenu" class="fixed top-0 left-[-100%] w-3/4 sm:w-1/2 h-full bg-[#3a3a3a] px-8 pt-24 pb-8 transition-all duration-300">
+                    <button id="exit" class="absolute top-5 right-5 text-2xl text-white cursor-pointer" aria-label="Close menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <ul class="flex flex-col gap-6 text-xl">
+                        <li><a href="#!">Home</a></li>
+                        <li><a href="#!">Products</a></li>
+                        <li><a href="#!">About</a></li>
+                        <li><a href="#!">Contact</a></li>
+                        <li class="w-[139px] h-[52px] flex items-center justify-center border border-white">Log in</li>
+                    </ul>
+                </div>
             </div>
-            <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
-              <div class="flex items-center gap-4">
-                <img
-                  src="./images/icons/humanoid_icon2.png"
-                  alt="column_icon2"
-                />
-                <h3 class="text-xl">Intuitive interface</h3>
-              </div>
-              <p>
-                When you add work to your Slate calendar we automatically
-                calculate useful insights
-              </p>
-            </div>
-            <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
-              <div class="flex items-center gap-4">
-                <img
-                  src="./images/icons/infinity_icon3.png"
-                  alt="column_icon3"
-                />
-                <h3 class="text-xl">Or with rules</h3>
-              </div>
-              <p>
-                When you add work to your Slate calendar we automatically
-                calculate useful insights
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="mt-25">
-        <div
-          class="flex flex-col items-center justify-center gap-5 text-center"
-        >
-          <h2 class="text-5xl leading-14 md:text-6xl">Contents</h2>
-          <p class="max-w-2xs md:max-w-lg leading-7 md:text-xl">
-            We focus on ergonomics and meeting you where you work. It's only a
-            keystroke away.
-          </p>
-        </div>
-        <div
-          class="mt-10 flex flex-col items-center justify-center gap-7 md:flex-row"
-        >
-          <div
-            class="flex flex-col justify-between items-center text-center w-2xs h-[573px] bg-white rounded-xl p-10 md:w-xs lg:w-[476px]"
-          >
-            <div class="flex flex-col gap-4">
-              <h3 class="text-black text-xl font-medium">Work</h3>
-              <p class="text-[#5C5C5C] max-w-[80%] mx-auto">
-                Ever wondered if you're too reliant on a client for work? Slate
-                helps you identify.
-              </p>
-            </div>
-            <button
-              class="flex justify-center items-center w-full max-w-[150px] h-[52px] bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300 font-medium rounded-lg"
-            >
-              Sign Up
-            </button>
-            <img
-              src="./images/Macbook Pro.png"
-              alt="macbook-image"
-              class="md:hidden"
-            />
-            <img
-              src="./images/Macbook Pro -desktop.png"
-              alt="macbb0ok-image"
-              class="hidden md:block"
-            />
-          </div>
-          <div
-            class="flex flex-col justify-between items-center text-center w-2xs h-[573px] bg-white rounded-xl p-10 md:w-xs lg:w-[476px]"
-          >
-            <div class="flex flex-col gap-4">
-              <h3 class="text-black text-xl font-medium">
-                Design with real data
-              </h3>
-              <p class="text-[#5C5C5C] max-w-[80%] mx-auto">
-                Ever wondered if you're too reliant on a client for work? Slate
-                helps you identify.
-              </p>
-            </div>
-            <button
-              class="flex justify-center items-center w-full max-w-[150px] h-[52px] bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300 font-medium rounded-lg"
-            >
-              Try For Free
-            </button>
-            <img
-              src="./images/Boards Notifications.png"
-              alt="boards-image"
-              class="md:hidden"
-            />
-            <!-- lbit borken image -->
-            <img
-              src="./images/Boards Notifications-desktop.png"
-              alt="boards-image"
-              class="hidden md:block"
-            />
-          </div>
-        </div>
-      </section>
-      <section class="mt-20">
-        <div class="flex flex-col text-center">
-          <h2 class="text-5xl leading-14 md:text-6xl">Gallery</h2>
-          <p class="max-w-2xs md:max-w-lg mx-auto leading-7 md:text-xl">
-            We focus on ergonomics and meeting you where you work. It's only a
-            keystroke away.
-          </p>
-        </div>
-        <div class="flex flex-col items-center mt-5 gap-5">
-          <!-- mobile col -->
-          <div class="flex flex-col gap-5">
-            <img
-              src="./images/galery_1.png"
-              alt="galery_1"
-              class="rounded-2xl lg:hidden"
-            />
-            <img
-              src="./images/galery_2.png"
-              alt="galery_2"
-              class="rounded-2xl lg:hidden"
-            />
-            <img
-              src="./images/galery_3.png"
-              alt="galery_3"
-              class="rounded-2xl lg:hidden"
-            />
-            <img
-              src="./images/galery_4.png"
-              alt="galery_4"
-              class="rounded-2xl lg:hidden"
-            />
-          </div>
-          <!-- desktop row 1 -->
-          <div class="hidden lg:flex justify-center gap-5">
-            <img src="./images/galery_1pc.png" alt="" class="rounded-2xl" />
-            <img src="./images/galery_2pc.png" alt="" class="rounded-2xl" />
-            <img src="./images/galery_3pc.png" alt="" class="rounded-2xl" />
-            <img src="./images/galery_4pc.png" alt="" class="rounded-2xl" />
-          </div>
-          <!-- desktop row 2 -->
-          <div class="hidden lg:flex justify-center gap-5">
-            <img src="./images/galery_5pc.png" alt="" class="rounded-2xl" />
-            <img src="./images/galery_6pc.png" alt="" class="rounded-2xl" />
-            <img src="./images/galery_7pc.png" alt="" class="rounded-2xl" />
-          </div>
-        </div>
-        <button
-          class="flex items-center justify-center w-44 h-16 border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300 mx-auto mt-10"
-        >
-          See more
-        </button>
-      </section>
-      <section class="mt-50">
-        <div class="text-center flex flex-col gap-5">
-          <h2 class="text-5xl leading-14 md:text-6xl">Partners</h2>
-          <p class="max-w-2xs md:max-w-lg mx-auto leading-7 md:text-xl">
-            We focus on ergonomics and meeting you where you work. It's only a
-            keystroke away.
-          </p>
-        </div>
-        <div
-          class="flex flex-col justify-center items-center gap-5 mt-15 md:flex-row"
-        >
-          <div class="flex justify-center gap-5">
-            <img
-              src="./images/logos_apple-app-store.png"
-              alt=""
-              class="h-14 sm:h-16"
-            />
-            <img src="./images/logos_apiary.png" alt="" class="h-14 sm:h-16" />
-            <img
-              src="./images/logos_android-icon.png"
-              alt=""
-              class="h-14 sm:h-16"
-            />
-          </div>
-          <div class="flex justify-center gap-4">
-            <img
-              src="./images/logos_basecamp.png"
-              alt=""
-              class="h-14 sm:h-16"
-            />
-            <img src="./images/logos_airbnb.png" alt="" class="h-14 sm:h-16" />
-            <img src="./images/logos_ibm.png" alt="" class="h-14 sm:h-16" />
-          </div>
-        </div>
-        <button
-          class="flex items-center justify-center w-44 h-16 border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300 mx-auto mt-10"
-        >
-          All Partners
-        </button>
-      </section>
-    </main>
+        </header>
+        <main>
+            <section class="mt-15">
+                <div class="flex flex-col gap-5 text-center">
+                    <h1 class="mx-auto max-w-[294px] sm:max-w-[609px] text-[48px] md:text-[60px] leading-16">Work at the Speed of thought</h1>
+                    <p class="mx-auto max-w-[350px] sm:max-w-[500px] px-3 leading-[30px] md:text-xl">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+                </div>
+                <div class="mt-15 flex flex-col gap-5 justify-center items-center md:flex-row">
+                    <button class="flex items-center justify-center w-44 h-16 bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300">Try For Free</button>
+                    <button class="flex items-center justify-center w-44 h-16 border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300">Learn More</button>
+                </div>
+                <div class="mt-10 w-full">
+                    <img src="./images/screens-mobile-grad.png" alt="screens-image-mobile" class="mx-auto w-full md:hidden" />
+                    <img src="./images/screens-desktop-grad.png" alt="screens-image-desktop" class="mx-auto w-full hidden md:block" />
+                </div>
+            </section>
+            <section class="mt-20">
+                <div class="flex flex-col gap-5 text-center">
+                    <h2 class="text-5xl leading-14 md:text-6xl">FEATURES</h2>
+                    <p class="mx-auto max-w-[411px] px-3 leading-7 md:max-w-[600px] md:text-xl">Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
+                </div>
+                <div class="md:flex justify-center items-center">
+                    <div class="relative flex justify-center mt-12">
+                        <img src="./images/chatbot-mobile.png" alt="chatbot-mobile" class="mx-auto w-[85%] md:hidden" />
+                        <img src="./images/linechart-mobile.png" alt="linechart-mobile" class="absolute left-1/2 -translate-x-1/2 bottom-[-25%] w-[65%] md:hidden" />
+                        <img src="./images/chatbot-desktop.png" alt="chatbot-desktop" class="mx-auto w-[80%] max-w-[900px] hidden md:block" />
+                        <img src="./images/linechart-desktop.png" alt="linechart-desktop" class="absolute w-[40%] right-[10%] bottom-[-5%] hidden md:block" />
+                    </div>
+                    <div class="mt-30 flex flex-col gap-15">
+                        <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
+                            <div class="flex items-center gap-4">
+                                <img src="./images/icons/cultery_icon1.png" alt="column_icon1" />
+                                <h3 class="text-xl">A single source of truth</h3>
+                            </div>
+                            <p>When you add work to your Slate calendar we automatically calculate useful insights</p>
+                        </div>
+                        <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
+                            <div class="flex items-center gap-4">
+                                <img src="./images/icons/humanoid_icon2.png" alt="column_icon2" />
+                                <h3 class="text-xl">Intuitive interface</h3>
+                            </div>
+                            <p>When you add work to your Slate calendar we automatically calculate useful insights</p>
+                        </div>
+                        <div class="flex flex-col gap-5 max-w-[249px] mx-auto">
+                            <div class="flex items-center gap-4">
+                                <img src="./images/icons/infinity_icon3.png" alt="column_icon3" />
+                                <h3 class="text-xl">Or with rules</h3>
+                            </div>
+                            <p>When you add work to your Slate calendar we automatically calculate useful insights</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-25">
+                <div class="flex flex-col items-center justify-center gap-5 text-center">
+                    <h2 class="text-5xl leading-14 md:text-6xl">Contents</h2>
+                    <p class="max-w-2xs md:max-w-lg leading-7 md:text-xl">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                </div>
+                <div class="mt-10 flex flex-col items-center justify-center gap-7 md:flex-row">
+                    <div class="flex flex-col justify-between items-center text-center w-2xs h-[573px] bg-white rounded-xl p-10 md:w-xs lg:w-[476px]">
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-black text-xl font-medium">Work</h3>
+                            <p class="text-[#5C5C5C] max-w-[80%] mx-auto">Ever wondered if you're too reliant on a client for work? Slate helps you identify.</p>
+                        </div>
+                        <button class="flex justify-center items-center w-full max-w-[150px] h-[52px] bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300 font-medium rounded-lg">Sign Up</button>
+                        <img src="./images/Macbook Pro.png" alt="macbook-image" class="md:hidden" />
+                        <img src="./images/Macbook Pro -desktop.png" alt="macbb0ok-image" class="hidden md:block" />
+                    </div>
+                    <div class="flex flex-col justify-between items-center text-center w-2xs h-[573px] bg-white rounded-xl p-10 md:w-xs lg:w-[476px]">
+                        <div class="flex flex-col gap-4">
+                            <h3 class="text-black text-xl font-medium">Design with real data</h3>
+                            <p class="text-[#5C5C5C] max-w-[80%] mx-auto">Ever wondered if you're too reliant on a client for work? Slate helps you identify.</p>
+                        </div>
+                        <button class="flex justify-center items-center w-full max-w-[150px] h-[52px] bg-[#4452FE] md:hover:bg-[#0211ad] transition-colors duration-300 font-medium rounded-lg">Try For Free</button>
+                        <img src="./images/Boards Notifications.png" alt="boards-image" class="md:hidden" />
+                        <!-- lbit borken image -->
+                        <img src="./images/Boards Notifications-desktop.png" alt="boards-image" class="hidden md:block" />
+                    </div>
+                </div>
+            </section>
+            <section class="mt-20">
+                <div class="flex flex-col text-center">
+                    <h2 class="text-5xl leading-14 md:text-6xl">Gallery</h2>
+                    <p class="max-w-2xs md:max-w-lg mx-auto leading-7 md:text-xl">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                </div>
+                <div class="flex flex-col items-center mt-5 gap-5">
+                    <!-- mobile col -->
+                    <div class="flex flex-col gap-5">
+                        <img src="./images/galery_1.png" alt="galery_1" class="rounded-2xl lg:hidden" />
+                        <img src="./images/galery_2.png" alt="galery_2" class="rounded-2xl lg:hidden" />
+                        <img src="./images/galery_3.png" alt="galery_3" class="rounded-2xl lg:hidden" />
+                        <img src="./images/galery_4.png" alt="galery_4" class="rounded-2xl lg:hidden" />
+                    </div>
+                    <!-- desktop row 1 -->
+                    <div class="hidden lg:flex justify-center gap-5">
+                        <img src="./images/galery_1pc.png" alt="" class="rounded-2xl" />
+                        <img src="./images/galery_2pc.png" alt="" class="rounded-2xl" />
+                        <img src="./images/galery_3pc.png" alt="" class="rounded-2xl" />
+                        <img src="./images/galery_4pc.png" alt="" class="rounded-2xl" />
+                    </div>
+                    <!-- desktop row 2 -->
+                    <div class="hidden lg:flex justify-center gap-5">
+                        <img src="./images/galery_5pc.png" alt="" class="rounded-2xl" />
+                        <img src="./images/galery_6pc.png" alt="" class="rounded-2xl" />
+                        <img src="./images/galery_7pc.png" alt="" class="rounded-2xl" />
+                    </div>
+                </div>
+                <button class="flex items-center justify-center w-44 h-16 border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300 mx-auto mt-10">See more</button>
+            </section>
+            <section class="mt-50">
+                <div class="text-center flex flex-col gap-5">
+                    <h2 class="text-5xl leading-14 md:text-6xl">Partners</h2>
+                    <p class="max-w-2xs md:max-w-lg mx-auto leading-7 md:text-xl">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-5 mt-15 md:flex-row">
+                    <div class="flex justify-center gap-5">
+                        <img src="./images/logos_apple-app-store.png" alt="" class="h-14 sm:h-16" />
+                        <img src="./images/logos_apiary.png" alt="apiary-logo" class="h-14 sm:h-16" />
+                        <img src="./images/logos_android-icon.png" alt="androind-logo" class="h-14 sm:h-16" />
+                    </div>
+                    <div class="flex justify-center gap-4">
+                        <img src="./images/logos_basecamp.png" alt="" class="h-14 sm:h-16" />
+                        <img src="./images/logos_airbnb.png" alt="airbnb-logo" class="h-14 sm:h-16" />
+                        <img src="./images/logos_ibm.png" alt="ibm-logo" class="h-14 sm:h-16" />
+                    </div>
+                </div>
+                <button class="flex items-center justify-center w-44 h-16 border border-white md:hover:bg-white md:hover:text-black transition-colors duration-300 mx-auto mt-10">All Partners</button>
+            </section>
+            <section class="mt-50">
+                <div class="text-center">
+                    <h2 class="text-5xl leading-14 md:text-6xl">Testimonials</h2>
+                </div>
 
-    <script src="./script.js"></script>
-  </body>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 justify-items-center max-w-[750px] mx-auto">
+                    <div class="flex flex-col gap-5 w-full max-w-[352px] border border-[#565656] rounded-xl p-10 md:w-[430px]">
+                        <div class="flex items-center gap-5">
+                            <img src="./images/avatar1.png" alt="avatar-1" />
+                            <h3 class="text-xl font-medium">Wade Steward <span class="block"></span> Designer</h3>
+                        </div>
+                        <p class="max-w-[244px] md:max-w-[320px]">Slate helps you see how many more days you need to work to reach your financial goal for the month and year. Slate helps you see how many more days you need to work to reach your financial goal for the month and year.your financial goal for the month and year.</p>
+                    </div>
+
+                    <div class="flex flex-col gap-5 w-full max-w-[352px] border border-[#565656] rounded-xl p-10 md:w-[430px]">
+                        <div class="flex items-center gap-5">
+                            <img src="./images/avatar2.png" alt="avatar-2" />
+                            <h3 class="text-xl font-medium">Philip Watson <span class="block"></span> Designer</h3>
+                        </div>
+                        <p class="max-w-[244px] md:max-w-[320px]">Slate helps you see how many more days you need to work to reach your financial goal for the month and year. Slate helps you see how many more days you need to work to reach your financial goal for the month and year.your financial goal for the month and year.</p>
+                    </div>
+
+                    <div class="flex flex-col gap-5 w-full max-w-[352px] border border-[#565656] rounded-xl p-10 md:w-[430px]">
+                        <div class="flex items-center gap-5">
+                            <img src="./images/avatar3.png" alt="avatar-3" />
+                            <h3 class="text-xl font-medium">Arthur Wilson <span class="block"></span> Designer</h3>
+                        </div>
+                        <p class="max-w-[244px] md:max-w-[320px]">Slate helps you see how many more days you need to work to reach your financial goal for the month and year. Slate helps you see how many more days you need to work to reach your financial goal for the month and year.your financial goal for the month and year.</p>
+                    </div>
+
+                    <div class="flex flex-col gap-5 w-full max-w-[352px] border border-[#565656] rounded-xl p-10 md:w-[430px]">
+                        <div class="flex items-center gap-5">
+                            <img src="./images/avatar4.png" alt="avatar-4" />
+                            <h3 class="text-xl font-medium">Regina Black <span class="block"></span> Designer</h3>
+                        </div>
+                        <p class="max-w-[244px] md:max-w-[320px]">Slate helps you see how many more days you need to work to reach your financial goal for the month and year. Slate helps you see how many more days you need to work to reach your financial goal for the month and year.your financial goal for the month and year.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-30">
+                <div class="bg-[#1E1E1E] lg:bg-[#343434] lg:max-w-[1200px] mx-auto lg:flex justify-between items-center relative px-6 sm:px-10 lg:px-20 py-16 lg:py-24 overflow-hidden lg:rounded-4xl">
+                    <div class="flex flex-col justify-center items-center gap-10 text-center lg:items-start lg:text-left lg:max-w-[50%]">
+                        <h2 class="text-4xl sm:text-5xl lg:text-5xl max-w-[336px] lg:max-w-[500px]">OpenType features and Variable fonts</h2>
+                        <button class="flex items-center justify-center w-56 h-14 sm:w-60 sm:h-16 bg-[#4452FE] hover:bg-[#0211ad] transition-colors duration-300 rounded-lg mt-4">Try For Free</button>
+                    </div>
+
+                    <img src="./images/Line Chart 1.png" alt="line chart" class="lg:hidden w-full max-w-sm mt-10 mx-auto" />
+                    <img src="./images/Line Chart  1-desktop.png" alt="line chart desktop" class="hidden lg:block bottom-0 right-0 absolute w-[500px] max-w-full rounded-br-4xl" />
+                </div>
+            </section>
+        </main>
+
+        <script src="./script.js"></script>
+    </body>
 </html>

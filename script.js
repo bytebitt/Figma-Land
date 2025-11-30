@@ -4,9 +4,9 @@ const exit = document.getElementById("exit");
 ("exit");
 
 btn.addEventListener("click", () => {
-  menu.style.left = menu.style.left === "0px" ? "-100%" : "0";
+    menu.style.left = menu.style.left === "0px" ? "-100%" : "0";
 });
 
 exit.addEventListener("click", () => {
-  menu.style.left = "-100%";
+    menu.style.left = "-100%";
 });
